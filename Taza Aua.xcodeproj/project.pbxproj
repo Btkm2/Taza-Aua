@@ -11,6 +11,8 @@
 		0CE26230276C19B6006B6D9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE2622F276C19B6006B6D9A /* ContentView.swift */; };
 		0CE26232276C19B8006B6D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE26231276C19B8006B6D9A /* Assets.xcassets */; };
 		0CE26235276C19B8006B6D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE26234276C19B8006B6D9A /* Preview Assets.xcassets */; };
+		0CE2623C276C1BBC006B6D9A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE2623B276C1BBC006B6D9A /* MapView.swift */; };
+		0CE2623E276C2D5A006B6D9A /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE2623D276C2D5A006B6D9A /* ShopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		0CE2622F276C19B6006B6D9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CE26231276C19B8006B6D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CE26234276C19B8006B6D9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CE2623B276C1BBC006B6D9A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0CE2623D276C2D5A006B6D9A /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				0CE2622D276C19B6006B6D9A /* Taza_AuaApp.swift */,
 				0CE2622F276C19B6006B6D9A /* ContentView.swift */,
+				0CE2623D276C2D5A006B6D9A /* ShopView.swift */,
+				0CE2623B276C1BBC006B6D9A /* MapView.swift */,
 				0CE26231276C19B8006B6D9A /* Assets.xcassets */,
 				0CE26233276C19B8006B6D9A /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE26230276C19B6006B6D9A /* ContentView.swift in Sources */,
+				0CE2623C276C1BBC006B6D9A /* MapView.swift in Sources */,
+				0CE2623E276C2D5A006B6D9A /* ShopView.swift in Sources */,
 				0CE2622E276C19B6006B6D9A /* Taza_AuaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
