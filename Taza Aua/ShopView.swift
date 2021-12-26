@@ -108,7 +108,9 @@ struct ShopView: View {
                 HStack{
                     Text("Защитные маски для лица")
                         .padding(.trailing, 160)
-                    Button(action: {}){
+                    Button(action: {
+                        
+                    }){
                         HStack{
                             Text("Все")
                             Image(systemName: "arrow.right")
