@@ -11,7 +11,7 @@ struct PopUpView: View {
     @State var searchItem: String = ""
     var body: some View {
         VStack {
-            Text("HI")
+//            Text("HI")
             TextField("Search",text: $searchItem)
             
                 .frame(width: UIScreen.main.bounds.width,

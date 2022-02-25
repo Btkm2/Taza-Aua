@@ -18,6 +18,9 @@
 
 /* Begin PBXFileReference section */
 		0C216E1E2778C1230030AB3D /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		0C9AA2BF278ADCEB00299CD3 /* OpenCV.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OpenCV.cpp; path = "Xcode Cpp files/OpenCV.cpp"; sourceTree = "<group>"; };
+		0C9AA2C0278ADCEB00299CD3 /* OpenCV.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = OpenCV.hpp; path = "Xcode Cpp files/OpenCV.hpp"; sourceTree = "<group>"; };
+		0C9AA2C1278AE6B000299CD3 /* Taza Aua.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Taza Aua.entitlements"; sourceTree = "<group>"; };
 		0CE2622A276C19B6006B6D9A /* Taza Aua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taza Aua.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE2622D276C19B6006B6D9A /* Taza_AuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taza_AuaApp.swift; sourceTree = "<group>"; };
 		0CE2622F276C19B6006B6D9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +44,8 @@
 		0CE26221276C19B6006B6D9A = {
 			isa = PBXGroup;
 			children = (
+				0C9AA2BF278ADCEB00299CD3 /* OpenCV.cpp */,
+				0C9AA2C0278ADCEB00299CD3 /* OpenCV.hpp */,
 				0CE2622C276C19B6006B6D9A /* Taza Aua */,
 				0CE2622B276C19B6006B6D9A /* Products */,
 			);
@@ -57,6 +62,7 @@
 		0CE2622C276C19B6006B6D9A /* Taza Aua */ = {
 			isa = PBXGroup;
 			children = (
+				0C9AA2C1278AE6B000299CD3 /* Taza Aua.entitlements */,
 				0CE2622D276C19B6006B6D9A /* Taza_AuaApp.swift */,
 				0CE2622F276C19B6006B6D9A /* ContentView.swift */,
 				0CE2623D276C2D5A006B6D9A /* ShopView.swift */,
@@ -278,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Taza Aua/Taza Aua.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Taza Aua/Preview Content\"";
@@ -289,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +304,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "apppl.Taza-Aua";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Taza Aua/Taza Aua.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Taza Aua/Preview Content\"";
@@ -318,6 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +336,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "apppl.Taza-Aua";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
