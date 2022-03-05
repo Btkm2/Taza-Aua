@@ -69,7 +69,12 @@ struct SearchView: View {
             HStack{
                 HStack{
                     Image(systemName: "magnifyingglass")
-                    TextField("Search",text: $searchItem)
+                    TextField("Search",text: $searchItem, onEditingChanged: {(changed) in
+                        print("onEditigChanged - \(changed)")
+                    })
+                    {
+                        print("onCommit")
+                    }
                     //                                .background(Color("DarkBlue"))
                     //.textFieldStyle(RoundedBorderTextFieldStyle())
                     //                        .frame(width: UIScreen.main.bounds.width-20, height: 50)
@@ -105,6 +110,7 @@ struct SearchView: View {
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height*0.2)
                     .padding(.top, 20)
             }
+            Text("Input : \(searchItem)")
 //            Spacer()
         }
         .background(Color.blue)
