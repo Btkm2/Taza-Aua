@@ -18,9 +18,10 @@ struct ShopView: View {
                     Divider()
                         .background(Color("DarkBlue"))
                     CatalogueView()
-    //                CategoriesView()
+                    CategoriesView()
                 }
             }
+            .background(Color("Grey"))
         }
     }
 }
@@ -29,6 +30,7 @@ struct ShopView_Previews: PreviewProvider {
     static var previews: some View {
         ShopView()
             .preferredColorScheme(.light)
+            .background(Color("grey"))
     }
 }
 
@@ -60,6 +62,8 @@ struct TopView: View {
 
 struct SearchView: View {
     @State var searchItem: String = ""
+    @State var ImageName: String = "mic" 
+    @State var isPressed: Bool = true
     var body: some View {
         VStack(alignment: .leading){
             RoundedRectangle(cornerRadius: 0)
@@ -78,7 +82,14 @@ struct SearchView: View {
                     //                                .background(Color("DarkBlue"))
                     //.textFieldStyle(RoundedBorderTextFieldStyle())
                     //                        .frame(width: UIScreen.main.bounds.width-20, height: 50)
-                    Image(systemName: "mic")
+                    Button(action:{
+//                        Image(systemName: "mic.fill")
+//                        self.ImageName = "mic.fill"
+                        self.isPressed.toggle()
+                    })
+                    {
+                        Image(systemName: self.isPressed == true ? "mic" : "mic.fill")
+                    }
                 }
                 .padding(.all, 8)
                 .overlay(RoundedRectangle(cornerRadius: 15).stroke(lineWidth: 1).foregroundColor(Color("DarkBlue")).background(Color("arkBlue")))
@@ -113,7 +124,7 @@ struct SearchView: View {
             Text("Input : \(searchItem)")
 //            Spacer()
         }
-        .background(Color.blue)
+//        .background(Color.blue)
     }
 }
 
@@ -191,6 +202,8 @@ struct CategoriesView: View {
             Spacer()
         }
 //        .padding(.top, 350)
-        .background(Color.red)
+//        .background(Color.red)
+        .background(Color.white)
+        .cornerRadius(20)
     }
 }
