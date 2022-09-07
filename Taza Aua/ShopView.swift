@@ -62,7 +62,7 @@ struct TopView: View {
 
 struct SearchView: View {
     @State var searchItem: String = ""
-    @State var ImageName: String = "mic" 
+    @State var ImageName: String = "mic"
     @State var isPressed: Bool = true
     var body: some View {
         VStack(alignment: .leading){
